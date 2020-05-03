@@ -1,0 +1,153 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-repeat:no-repeat;
+    background-position:right top;
+    background-size:100%;
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.container{
+    width:500px;
+    padding:50px;
+    padding-top:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#393939a1;
+    border-radius: 10px;
+    color:#fafafa;
+    margin-top:100px;
+}
+
+.askNameForm,
+.showName,
+.js-toDoBox{
+    display:none;
+}
+
+.show{
+    display:block;
+}
+
+.weather {
+    width:100%;
+    font-size:11px;
+    font-weight:300;
+    flex-flow: row-reverse;
+    text-align:right;
+}
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock .date{
+    font-size:18px;
+    font-weight:300px;
+}
+
+.clock .time{
+    font-size:35px;
+    font-weight:400;
+    margin:5px 0;
+}
+.name{
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+.name .askNameForm input{
+    padding:5px;
+    border:none;
+    color:#787676;
+    border-radius:5px;
+}
+
+.name .showName{
+    font-size:25px;
+    font-weight:400;
+}
+
+.toDo{
+    width:500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+
+.toDo .toDoForm{
+    margin-bottom:10px;
+}
+
+.toDo .toDoForm input{
+    padding:5px;
+    border:none;
+    color:#787676;
+    border-radius:5px;
+}
+
+.toDo .showToDos{
+    width:80%;
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+button{
+    border:none;
+    background-color:rgba(0, 0, 0, 0);
+    margin-left: 3px;
+}
+
+li{
+    list-style:none;
+}
+
+.showToDos .pendBox{
+    width:40%;
+    background-color:#ddbfbf4e;
+    padding:10px;
+    text-align:center;
+    border-radius: 5px;
+}
+
+.showToDos .pendBox h2{
+    margin-top:-25px;
+}
+
+.showToDos .showPendToDos li{
+    font-size:15px;
+    font-weight:500;
+    margin-top:10px;
+}
+
+.showToDos .finishBox{
+    width:40%;
+    background-color:#ddbfbf4e;
+    padding:10px;
+    text-align:center;
+    border-radius: 5px;
+}
+
+.showToDos .finishBox h2{
+    margin-top:-25px;
+}
+
+.showToDos .showFinishToDos li{
+    font-size:15px;
+    font-weight:500;
+    margin-top:10px;
+}
