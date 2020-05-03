@@ -33,8 +33,10 @@ function showWeatherImoge(weather){
             return "";
     }
 }
+
 function saveCoords(coordsObj){
     localStorage.setItem(COORDS_LS, JSON.stringify(coordsObj));
+    location.reload(true);
 }
 
 function handleSuccess(position){
